@@ -3,7 +3,7 @@
  * @brief   A controller to avoid obstacles
  *
  * @author  Miguel Angel de Miguel Paraiso
- * @date    2014-11
+ * @date    09-11-2014
  */
 
 #include "MyRobot.h"

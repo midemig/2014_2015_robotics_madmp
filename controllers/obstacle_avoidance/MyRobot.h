@@ -3,7 +3,7 @@
  * @brief   A controller to avoid obstacles
  *
  * @author  Miguel Angel de Miguel Paraiso
- * @date    2014-11
+ * @date    09-11-2014
  */
 
 #include <iostream>
@@ -39,32 +39,43 @@ class MyRobot : public DifferentialWheels {
 
         /**
           * @brief Refresh the data of the distance sensors
+          * @param
+          * @return
           */
         void get_distances();
 
         /**
           * @brief Controls the robot in a difficult situation
+          * @param
+          * @return
           */
         void difficult_situation();
 
         /**
           * @brief Controls the robot to follow a wall
+          * @param
+          * @return
           */
         void follow_wall();
 
         /**
           * @brief Converts the mode into motor speed
+          * @param
+          * @return
           */
         void send_mode_to_motors();
 
         /**
           * @brief Follows the compass
+          * @param
+          * @return
           */
         void follow_compass(double angle);
 
         /**
           * @brief Special condition for an if
-          *@return bool
+          * @param
+          * @return bool
           */
         bool turning_condition();
 
@@ -81,28 +92,39 @@ class MyRobot : public DifferentialWheels {
         Mode _mode;
 
     public:
+
         /**
          * @brief Empty constructor of the class.
+         * @param
+         * @return
          */
         MyRobot();
 
         /**
          * @brief Destructor of the class.
+         * @param
+         * @return
          */
         ~MyRobot();
 
         /**
          * @brief User defined function for initializing and running the template class.
+         * @param
+         * @return
          */
         void run();
 
         /**
           * @brief Converting bearing vector from compass to angle (in degrees).
+          * @param
+          * @return
           */
         double convert_bearing_to_degrees(const double* in_vector);
 
         /**
           * @brief Prints distance data
+          * @param
+          * @return
           */
         void print_distance_sensor();
 };

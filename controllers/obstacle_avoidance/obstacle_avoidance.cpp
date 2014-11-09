@@ -1,9 +1,9 @@
 /**
- * @file    main.cpp
- * @brief   A simple example for maintaining a straight line with the compass.
+ * @file    obstacle_avoidance.cpp
+ * @brief   A controller to avoid obstacles
  *
- * @author  Raul Perula-Martinez <raul.perula@uc3m.es>
- * @date    2014-07
+ * @author  Miguel Angel de Miguel Paraiso <100292950@alumnos.uc3m.es>
+ * @date    09-11-2014
  */
 
 #include "MyRobot.h"
