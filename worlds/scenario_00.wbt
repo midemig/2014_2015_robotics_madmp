@@ -1,4 +1,4 @@
-#VRML_SIM V7.4.3 utf8
+#VRML_SIM V6.0 utf8
 WorldInfo {
   info [
     "The model of the Pioneer 2 robot"
@@ -19,31 +19,109 @@ Background {
   ]
 }
 PointLight {
-  ambientIntensity 1
+  ambientIntensity 4
   intensity 0.1
   location 3 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 1
+  ambientIntensity 4
   intensity 0.1
   location -3 6 5
   radius 1000
 }
 PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location -3 6 -5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 3 6 -5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 3 6 -10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location -3 6 -10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location -3 6 10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 3 6 10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 0
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 -5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 -10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location -6 6 -10
+  radius 1000
+}
+PointLight {
   ambientIntensity 1
+  intensity 0.3
+  location -6 6 -5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
   intensity 0.1
   location -6 6 0
   radius 1000
 }
 PointLight {
-  ambientIntensity 1
+  ambientIntensity 4
   intensity 0.1
   location -6 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 1
+  ambientIntensity 4
   intensity 0.1
   location -6 6 10
   radius 1000
