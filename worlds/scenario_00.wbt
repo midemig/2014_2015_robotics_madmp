@@ -413,7 +413,7 @@ DEF FLOOR Solid {
   locked TRUE
 }
 DEF PIONEER2 DifferentialWheels {
-  translation 4.3 0 -9
+  translation 0 0 -9
   rotation 0 1 0 3.14159
   children [
     Compass {
@@ -1029,7 +1029,7 @@ DEF PIONEER2 DifferentialWheels {
       }
     ]
   }
-  controller "wall_follower"
+  controller "straight_odometry"
   battery [
     999469, 1e+06, 1e+06
   ]
@@ -1039,4 +1039,6 @@ DEF PIONEER2 DifferentialWheels {
   wheelRadius 0.0825
   speedUnit 0.1
   slipNoise 0.4
+  encoderNoise 0
+  encoderResolution 5
 }

@@ -1299,8 +1299,7 @@ DEF PIONEER2 DifferentialWheels {
       fieldOfView 0.8
       width 240
       height 160
-      windowPosition 0.811359 0.13786
-      pixelSize 0
+      windowPosition 0.776536 0.880775
       antiAliasing TRUE
     }
     DEF SPHERICAL_CAMERA Camera {
@@ -1365,8 +1364,7 @@ DEF PIONEER2 DifferentialWheels {
       width 160
       height 160
       spherical TRUE
-      windowPosition 0.273834 0.265432
-      pixelSize 0
+      windowPosition 0.148976 0.880775
       antiAliasing TRUE
     }
     GPS {

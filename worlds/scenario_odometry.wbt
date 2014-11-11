@@ -1,4 +1,4 @@
-#VRML_SIM V7.4.3 utf8
+#VRML_SIM V6.0 utf8
 WorldInfo {
   info [
     "The model of the Pioneer 2 robot"
@@ -9,8 +9,8 @@ WorldInfo {
   northDirection -1 0 -1
 }
 Viewpoint {
-  orientation 0.508352 0.733139 0.451759 4.35949
-  position -5.29423 30.6184 -3.06641
+  orientation 0.467555 0.73416 0.492342 4.51625
+  position -16.2072 29.5753 2.44774
   follow "pioneer2"
 }
 Background {
@@ -19,31 +19,109 @@ Background {
   ]
 }
 PointLight {
-  ambientIntensity 1
+  ambientIntensity 4
   intensity 0.1
   location 3 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 1
+  ambientIntensity 4
   intensity 0.1
   location -3 6 5
   radius 1000
 }
 PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location -3 6 -5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 3 6 -5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 3 6 -10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location -3 6 -10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location -3 6 10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 3 6 10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 0
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 -5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location 6 6 -10
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
+  intensity 0.1
+  location -6 6 -10
+  radius 1000
+}
+PointLight {
   ambientIntensity 1
+  intensity 0.3
+  location -6 6 -5
+  radius 1000
+}
+PointLight {
+  ambientIntensity 4
   intensity 0.1
   location -6 6 0
   radius 1000
 }
 PointLight {
-  ambientIntensity 1
+  ambientIntensity 4
   intensity 0.1
   location -6 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 1
+  ambientIntensity 4
   intensity 0.1
   location -6 6 10
   radius 1000
@@ -83,6 +161,27 @@ Solid {
   ]
   boundingObject Box {
     size 0.2 2 20
+  }
+  locked TRUE
+}
+Solid {
+  translation 0 1 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 0.1
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 6.5 2 6.5
+      }
+    }
+  ]
+  name "objeto"
+  boundingObject Box {
+    size 6.5 2 6.5
   }
   locked TRUE
 }
@@ -335,7 +434,7 @@ DEF FLOOR Solid {
   locked TRUE
 }
 DEF PIONEER2 DifferentialWheels {
-  translation 4.3 0 -9
+  translation 0 0 -9
   rotation 0 1 0 3.14159
   children [
     Compass {
@@ -951,9 +1050,9 @@ DEF PIONEER2 DifferentialWheels {
       }
     ]
   }
-  controller "wall_follower"
+  controller "obstacle_odometry"
   battery [
-    999469, 1e+06, 1e+06
+    999477, 1e+06, 1e+06
   ]
   cpuConsumption 0.2
   motorConsumption 0.1
@@ -961,4 +1060,6 @@ DEF PIONEER2 DifferentialWheels {
   wheelRadius 0.0825
   speedUnit 0.1
   slipNoise 0.4
+  encoderNoise 0
+  encoderResolution 5
 }

@@ -59,18 +59,6 @@ refresh_odometry();
         case 3:
             go_to_point(9,0);
             break;
-        case 4:
-            go_to_point(4,-4);
-            break;
-        case 5:
-            go_to_point(-4,-4);
-            break;
-        case 6:
-            go_to_point(-9,0);
-            break;
-        case 7:
-            _status = 1;
-            break;
         default:
             break;
         }
