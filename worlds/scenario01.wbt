@@ -1272,8 +1272,8 @@ DEF FLOOR Solid {
   locked TRUE
 }
 DEF PIONEER2 DifferentialWheels {
-  translation -0.749622 0 -9.04596
-  rotation 0 1 0 0.968492
+  translation 0.110152 8.8627e-15 -7.83756
+  rotation 0 1 0 -3.69844
   children [
     Compass {
     }
@@ -1489,7 +1489,7 @@ DEF PIONEER2 DifferentialWheels {
     }
     Solid {
       translation -0.1603 0.0825 0
-      rotation 1 0 0 5.27916
+      rotation 1 0 0 -3.78264
       children [
         DEF WHEEL Transform {
           rotation 0 0 1 1.57
@@ -1513,7 +1513,7 @@ DEF PIONEER2 DifferentialWheels {
     }
     Solid {
       translation 0.1603 0.0825 0
-      rotation 1 0 0 2.64154
+      rotation 1 0 0 11.6818
       children [
         USE WHEEL
       ]
@@ -1886,9 +1886,9 @@ DEF PIONEER2 DifferentialWheels {
       }
     ]
   }
-  controller "obstacle_avoidance"
+  controller "wall_detector"
   battery [
-    999321, 1e+06, 1e+06
+    999317, 1e+06, 1e+06
   ]
   cpuConsumption 0.2
   motorConsumption 0.1
